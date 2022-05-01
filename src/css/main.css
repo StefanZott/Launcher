@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+}
+
+.h-90 {
+    height: 90%;
+}
+
+.h-10 {
+    height: 10%;
+}
