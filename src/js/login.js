@@ -1,15 +1,25 @@
+for (let index = 0; index < document.getElementById("loginTab").classList.length; index++) {
+    if (document.getElementById("loginTab").classList[index] === "active") {
+        $("#content").load("../html/loginMaske.html");
+    }
+}
+
+for (let index = 0; index < document.getElementById("registerTab").classList.length; index++) {
+    if (document.getElementById("registerTab").classList[index] === "active") {
+        $("#content").load("../html/registerMaske.html");
+    }
+}
+
 document.getElementById("registerTab").onclick = function () {
     document.getElementById("loginTab").classList.remove("active")
     document.getElementById("registerTab").classList.add("active");
 
-    $("#contentRegister").css("display", "block");
-    $("#contentLogin").css("display", "none");
+    $("#content").load("../html/registerMaske.html");
 }
 
 document.getElementById("loginTab").onclick = function () {
     document.getElementById("registerTab").classList.remove("active")
     document.getElementById("loginTab").classList.add("active");
 
-    $("#contentLogin").css("display", "block");
-    $("#contentRegister").css("display", "none");
+    $("#content").load("../html/loginMaske.html");
 }

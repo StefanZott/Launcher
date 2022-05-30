@@ -49,7 +49,7 @@ function createWindow() {
   */
 
   // Open the DevTools.
-  loginWindow.webContents.openDevTools()
+  // loginWindow.webContents.openDevTools()
 }
 
 // If the app initialized and ready, then execute function "createWindow"
