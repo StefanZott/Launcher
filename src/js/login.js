@@ -23,3 +23,7 @@ document.getElementById("loginTab").onclick = function () {
 
     $("#content").load("../html/loginMaske.html");
 }
+
+document.getElementById("loginBtn").onclick = function () {
+    console.log("LOGIN")
+}
