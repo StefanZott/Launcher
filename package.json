@@ -7,6 +7,10 @@
     "start": "electron .",
     "build": "electron-builder"
   },
+  "directories": {
+    "buildResources": "build",
+    "app": "build"
+  },
   "build": {
     "appId": "my-app",
     "win": {
